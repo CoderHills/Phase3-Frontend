@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import AddBook from "./AddBook.jsx";
 import BookList from "./BookList.jsx";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://phase3-backend-1.onrender.com";
+
 
 export default function App() {
   const [books, setBooks] = useState([]);
