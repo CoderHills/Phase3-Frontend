@@ -111,6 +111,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.2s, box-shadow 0.2s;
+  position: relative; /* for delete button positioning */
 }
 
 .book-list li:hover {
@@ -128,6 +129,32 @@ h1 {
 .book-list .author {
   font-size: 1.1rem;
   color: #555;
+}
+
+.book-list .description {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* ===== Delete Button ===== */
+.book-list .delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.book-list .delete-button:hover {
+  background-color: #ff4c4c;
+  transform: translateY(-2px);
 }
 
 /* ===== Responsive ===== */
