@@ -29,7 +29,9 @@ export default function BookList({ books, onBookDeleted }) {
             <div className="title">{book.title}</div>
             <div className="author">{book.author}</div>
             {book.description && <div className="description">{book.description}</div>}
-            <button className="delete-btn" onClick={() => handleDelete(book.id)}>Delete</button>
+            <button className="delete-btn" onClick={() => handleDelete(book.id)}>
+              Delete
+            </button>
           </li>
         ))}
       </ul>
