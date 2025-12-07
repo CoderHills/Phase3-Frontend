@@ -103,6 +103,7 @@ h1 {
 }
 
 .book-list li {
+  position: relative; /* for delete button positioning */
   background-color: #fafafa;
   padding: 20px;
   border-radius: 15px;
@@ -111,7 +112,6 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.2s, box-shadow 0.2s;
-  position: relative; /* for delete button positioning */
 }
 
 .book-list li:hover {
@@ -132,39 +132,12 @@ h1 {
 }
 
 .book-list .description {
-  font-size: 0.95rem;
-  color: #666;
   margin-top: 8px;
+  font-size: 1rem;
+  color: #666;
 }
 
 /* ===== Delete Button ===== */
-.book-list .delete-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #ff6b6b;
-  border: none;
-  color: white;
-  font-size: 0.9rem;
-  padding: 6px 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s;
-}
-
-.book-list .delete-button:hover {
-  background-color: #ff4c4c;
-  transform: translateY(-2px);
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .hero-form .add-book input,
-  .hero-form .add-book button {
-    font-size: 1.2rem;
-    padding: 16px;
-  }
-}/* ===== Delete Button ===== */
 .book-list .delete-button {
   position: absolute;
   top: 12px;
@@ -172,10 +145,10 @@ h1 {
   background-color: #e63946; /* strong red */
   border: none;
   color: white;
-  font-size: 1rem; /* larger text */
-  font-weight: bold; /* bold */
-  padding: 10px 14px; /* larger clickable area */
-  border-radius: 10px; /* rounded corners */
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
@@ -187,3 +160,11 @@ h1 {
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-form .add-book input,
+  .hero-form .add-book button {
+    font-size: 1.2rem;
+    padding: 16px;
+  }
+}
