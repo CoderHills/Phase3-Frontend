@@ -164,4 +164,26 @@ h1 {
     font-size: 1.2rem;
     padding: 16px;
   }
+}/* ===== Delete Button ===== */
+.book-list .delete-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #e63946; /* strong red */
+  border: none;
+  color: white;
+  font-size: 1rem; /* larger text */
+  font-weight: bold; /* bold */
+  padding: 10px 14px; /* larger clickable area */
+  border-radius: 10px; /* rounded corners */
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
+
+.book-list .delete-button:hover {
+  background-color: #d62828; /* darker red on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
